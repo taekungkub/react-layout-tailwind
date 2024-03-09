@@ -1,0 +1,27 @@
+.sidebar {
+  @apply fixed inset-0 w-[250px] h-screen bg-gray-900 left-0 z-30  overflow-y-auto transition duration-300 transform  lg:translate-x-0 lg:static lg:inset-0;
+}
+
+.sidebar .inner-sidebar {
+  @apply flex flex-col h-full  text-white;
+}
+
+.menu-list {
+  @apply flex-1 ;
+}
+
+.menu-item {
+  @apply flex p-3 rounded-lg m-2 transform transition duration-200 text-base font-bold cursor-pointer text-center text-gray-500;
+}
+
+.menu-item:hover {
+  @apply bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100;
+}
+
+.menu-item.active {
+  @apply bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100;
+}
+
+li {
+  list-style: none;
+}
